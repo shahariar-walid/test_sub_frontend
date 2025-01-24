@@ -5,7 +5,7 @@ document.getElementById('subscriptionForm').addEventListener('submit', async (ev
     const email = emailInput.value.trim();
   
     try {
-      const response = await fetch('http://localhost:3000/api/subscribe', {
+      const response = await fetch('https://your-backend.onrender.com/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
